@@ -1,0 +1,10 @@
+requests>=2.32
+beautifulsoup4>=4.12
+# Optional: clean.py writes Parquet only if pandas + pyarrow are present;
+# without them it writes CSV only and says so.
+pandas>=2.0
+pyarrow>=15.0
+# For scraper/dynamic.py (JS-rendered boards). Also install a browser:
+# playwright install chromium (or point CHROMIUM_EXECUTABLE_PATH at a
+# system Chromium — see scraper/config.py).
+playwright>=1.44
