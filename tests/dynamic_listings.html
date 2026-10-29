@@ -1,0 +1,20 @@
+<!-- LOCAL FIXTURE ONLY. These are invented listings, not real jobs.
+     The listings below do NOT exist in this HTML file — JavaScript
+     injects them after load, so only a real browser (Playwright)
+     can see them. A plain requests fetch of this page finds nothing.
+     Used solely to verify scraper/dynamic.py without touching any
+     website. -->
+<!doctype html>
+<html>
+  <head><meta charset="utf-8"><title>Fixture — JS listings</title></head>
+  <body>
+    <ul id="jobs"></ul>
+    <script>
+      document.getElementById("jobs").innerHTML = [
+        '<li class="listing"><a class="title" href="https://example.com/jobs/1">Sample Data Engineer Intern</a><span class="company">Sample Corp</span><span class="location">Remote</span></li>',
+        '<li class="listing"><a class="title" href="https://example.com/jobs/2">Sample Python Intern</a><span class="company">Sample Labs</span><span class="location">Butwal, Nepal</span></li>',
+        '<li class="listing"><a class="title" href="https://example.com/jobs/1">Sample Data Engineer Intern</a><span class="company">Sample Corp</span><span class="location">Remote</span></li>'
+      ].join("");
+    </script>
+  </body>
+</html>
